@@ -1,7 +1,7 @@
 module.exports = {
-    input: './www/index.js',
+    input: 'www/index.js',
     output: {
-        file: './www/dist/js/bundle.js',
+        file: 'www/dist/js/bundle.js',
         format: 'iife',
         name: 'desk',
         sourcemap: true,
