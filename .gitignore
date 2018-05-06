@@ -62,3 +62,7 @@ typings/
 
 # sqlite test db
 *test.db
+
+# dist
+**/www/dist/css/style.css
+**/www/dist/js/bundle.js
