@@ -1,7 +1,8 @@
 global.rootRequire = function(name) {
-    return require(process.cwd() + '/' + name);
+    const accountingDirectory = __dirname + '/..'
+    return require(accountingDirectory + '/' + name);
 }
-
+const path = require('path');
 const server = require('frappejs/server');
 const frappe = require('frappejs');
 const naming = require('frappejs/model/naming');
@@ -12,7 +13,7 @@ module.exports = {
         await server.start({
             backend: 'sqlite',
             connectionParams: { dbPath: 'test.db' },
-            staticPath: './www',
+            staticPath: path.resolve(__dirname, '..', 'www'),
             models: require('../models')
         })
 
