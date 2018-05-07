@@ -2,7 +2,7 @@
   "name": "frappe-accounting",
   "description": "Simple Accounting app for everyone",
   "productName": "Frappe Accounting",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "author": {
     "name": "Frappe Technologies Pvt. Ltd.",
     "email": "hello@frappe.io"
@@ -21,7 +21,7 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
-    "frappejs": "frappe/frappejs"
+    "frappejs": "0.0.5"
   },
   "devDependencies": {
     "electron": "1.8.4",
