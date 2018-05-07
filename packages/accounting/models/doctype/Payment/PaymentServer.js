@@ -1,6 +1,6 @@
 const BaseDocument = require('frappejs/model/document');
 const frappe = require('frappejs');
-const LedgerPosting = require('frappe-accounting/accounting/ledgerPosting');
+const LedgerPosting = require('electron')['accounting/ledgerPosting'];
 
 module.exports = class PaymentServer extends BaseDocument {
     getPosting() {
